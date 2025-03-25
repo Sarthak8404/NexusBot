@@ -12,7 +12,6 @@ process.env.SERVER_URL = SERVER_URL;
 const clientBuildPath = path.join(__dirname, '..', 'client', 'build');
 console.log('Client build path:', clientBuildPath);
 
-// app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cors({
   origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5000', 'http://127.0.0.1:5000'],
